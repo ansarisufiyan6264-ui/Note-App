@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+ .container{
+    width: 450px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    background: white;
+ }
+
+ .title {
+    text-align: center;
+    color: rgba(232, 199, 38, 0.902);
+    margin-bottom: 10px;
+ }
+ .int-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ #int {
+    width: 350px;
+    min-height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #ccc;
+ }
+
+ #int:focus {
+    border-color: #2563eb;
+ }
+
+ 
+.btn {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    cursor: pointer;
+    color:white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    background-color: #1d4ed8;
+}
+
+#result {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.note-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    margin-top: 10px;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.note-card p{
+    flex: 1;
+    word-break: break-all;
+}
+
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-btn, .edit-btn{
+    flex-shrink: 0;
+}
+
+.btn-group{
+    display: flex;
+    gap: 8px;
+}
+
